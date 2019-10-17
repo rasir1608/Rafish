@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Digdig</title>
+    <style>
+        #game-plat {
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -15,26 +21,6 @@
 </body>
 
 </html>
-<script src="./js/fish.js"></script>
-<script src="./js/Rafishpond.js"></script>
-<script>
-    var colors = ['#ff0000', '#00ff00', '#0000ff']
-    var i = 0;
-    const fishPond = new Rafishpond('game-plat', {
-        width: 500,
-        height: 400,
-        interval: 1000,
-        beforUpdate: [function () {
-            console.log('beforUpdate')
-        }],
-        afterUpdate: [
-            function () {
-                console.log('afterUpdate')
-            }
-        ]
-    });
-    fishPond.startRender();
-    fishPond.addItem(new Bg({
-        color: '#00ff00'
-    }), true);
-</script>
+<script src="./js/beans.js"></script>
+<script src="./js/rainbow-core.js"></script>
+<script src="./js/handler.js"></script>
